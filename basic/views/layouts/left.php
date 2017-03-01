@@ -4,7 +4,6 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
-
 /* @var $this \yii\web\View */
 /* @var $content string */
 
@@ -49,8 +48,27 @@ AppAsset::register($this);
 <!-- end top -->
 <!-- end  -->
 <div class="container">
-    <!-- 中间 -->
+  <div class="wrap mt10 clearfix">
+    <!-- 左边 -->
+    <div class="aside fl">
+      <!--side-nav-->
+      <a href="member.html" class="member-aside-title"><em class="myfont">&#xe627;</em>帐户中心</a>
+      <ul class="side-nav f14 bdr">
+        <li><a href="Asset-Statistics.html">资产统计</a></li>
+        <li><a href="recharge.html">我要充值</a></li>
+        <li><a href="Withdrawals.html">我要提现</a></li>
+        <li><a href="Bank-Card.html">银行卡管理</a></li>
+        <li><a href="Record.html">交易记录</a></li>
+        <li><a href="My-investment.html">我的投资</a></li>
+        <li><a href="loan.html">我的借款</a></li>
+        <li><a href="Infomation.html">站内信息</a></li>
+        <li><a href="safe.html">安全设置</a></li>
+        <li><a href="Recommend.html">推荐好友</a></li>
+      </ul>
+    </div>
+    <!-- 右边 -->
     <?= $content ?>
+  </div>
 </div>
 <!-- foot -->
 <!--Partner-->

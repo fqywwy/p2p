@@ -6,8 +6,8 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
-use app\models\Index;
-class IndexController extends Controller{
+use app\models\Borrow;
+class BorrowController extends Controller{
     public function actionIndex(){
         return $this->render("index");
     }

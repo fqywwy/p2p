@@ -6,10 +6,11 @@
 	use yii\filters\VerbFilter;
 	use app\models\LoginForm;
 	use app\models\ContactForm;
-	use app\models\Login;
-	class LoginController extends Controller{
+	use app\models\Member;
+	class MemberController extends Controller{
+		public $layout = 'left';
 	    public function actionIndex(){
-	        return $this->render("login");
+	        return $this->render("index");
 	    }
 	}
 ?>
